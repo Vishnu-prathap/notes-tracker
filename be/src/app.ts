@@ -4,7 +4,9 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/", (req, res) => res.send("Server up and running!"));
+app.get("/", (req: Request, res: Response) => {
+  res.send("Server up and running!");
+});
 
 const PORT = process.env.PORT || 8000;
 
