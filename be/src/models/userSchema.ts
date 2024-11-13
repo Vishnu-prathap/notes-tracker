@@ -2,7 +2,7 @@ import mongoose, { Schema, Document } from "mongoose";
 import { v4 as uuidV4 } from "uuid";
 import bcrypt from "bcryptjs";
 
-export interface User extends Document {
+export interface UserType extends Document {
   _id: string;
   uid: string;
   name: string;
@@ -12,7 +12,7 @@ export interface User extends Document {
     (comparePassword: string): Promise<boolean>;
   };
 }
-const UserSchema = new Schema({
+const UserSchema = new Schema<UserType>({
   uid: { type: "String", default: uuidV4 },
   name: {
     type: "String",
