@@ -12,13 +12,13 @@ export default function NoteCard(){
             <div>Notes string</div>
         </CardContent>
         <CardHeader className="flex flex-row justify-around  items-end">
-            <div><Button>#Alert</Button></div>
             <div>
                 <Button><BsPencil />
                 </Button>
                 <Button><MdDeleteOutline />
                 </Button>
             </div>
+            <div><Button>#Alert</Button></div>
         </CardHeader>
     </Card>
 }
