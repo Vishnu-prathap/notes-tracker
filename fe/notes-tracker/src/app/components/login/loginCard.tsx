@@ -10,8 +10,7 @@ export default function LoginCard() {
   const toggleVisibility = () => setIsVisible(!isVisible);
 
   return (
-    <div className="flex items-center w-full justify-center h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800">
-      <Card
+    <Card
         className="min-w-[400px] border-2 border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 
         shadow-lg shadow-blue-500/30 text-center gap-4 rounded-xl transform transition-transform hover:scale-105 p-4"
       >
@@ -60,6 +59,6 @@ export default function LoginCard() {
           </Button>
         </CardFooter>
       </Card>
-    </div>
+    
   );
 }
